@@ -108,7 +108,7 @@ const addEmployee = () => {
         {
             type: 'input',
             name: 'id',
-            message: "Please enter the employee's ID.",
+            message: "Submit employee's ID.",
             validate: nameInput => {
                 if  (isNaN(nameInput)) {
                     console.log ("Please enter the employee's ID!")
@@ -121,13 +121,13 @@ const addEmployee = () => {
         {
             type: 'input',
             name: 'email',
-            message: "Please enter the employee's email.",
+            message: "Enter the employee's email.",
             validate: email => {
                 
                 if (valid) {
                     return true;
                 } else {
-                    console.log ('Please enter an email!')
+                    console.log ('Please enter a email!')
                     return false; 
                 }
             }
@@ -148,7 +148,7 @@ const addEmployee = () => {
         {
             type: 'input',
             name: 'school',
-            message: "Please enter the intern's school",
+            message: "Where did you got to school?",
             when: (input) => input.role === "Intern",
             validate: nameInput => {
                 if (nameInput) {
@@ -161,7 +161,7 @@ const addEmployee = () => {
         {
             type: 'confirm',
             name: 'confirmAddEmployee',
-            message: 'Would you like to add more team members?',
+            message: 'Would you like to add another team member?',
             default: false
         }
     ])
@@ -203,7 +203,7 @@ const writeFile = data => {
             return;
         // when the profile has been created 
         } else {
-            console.log("Your team profile has been successfully created! Please check out the index.html")
+            console.log("team profile is created successfully created! Please check out the index.html")
         }
     })
 }; 
