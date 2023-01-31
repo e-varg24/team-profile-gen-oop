@@ -45,7 +45,7 @@ const addManager = () => {
         {
             type: 'input',
             name: 'email',
-            message: "Manager's id please",
+            message: "Manager's email clsplease",
             validate: email => {
                 if (email) {
                     return true;
@@ -57,11 +57,11 @@ const addManager = () => {
         },
         {
             type: 'input',
-            name: 'Number',
-            message: "enter managers phone number ",
+            name: 'officeNumber',
+            message: "enter managers office number ",
             validate: nameInput => {
                 if  (isNaN(nameInput)) {
-                    console.log ('Please enter managers number!')
+                    console.log ('Please enter managers officeNumber!')
                     return false; 
                 } else {
                     return true;
@@ -70,8 +70,8 @@ const addManager = () => {
         }
     ])
     .then(managerInput => {
-        const  { name, id, email, Number } = managerInput; 
-        const manager = new Manager (name, id, email, Number);
+        const  { name, id, email, officeNumber } = managerInput; 
+        const manager = new Manager (name, id, email, officeNumber);
 
         teamArray.push(manager); 
         console.log(manager); 
@@ -124,7 +124,7 @@ const addEmployee = () => {
             message: "Enter the employee's email.",
             validate: email => {
                 
-                if (valid) {
+                if (email) {
                     return true;
                 } else {
                     console.log ('Please enter a email!')
