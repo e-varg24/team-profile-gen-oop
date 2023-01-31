@@ -6,7 +6,9 @@ This weeks challange was to creat a team generator using the comand line and be 
 You have to build the generator with node.js to inquire the team info and then export to build the html page.
 
 ## Screenshot
+![Screenshot (13)](https://user-images.githubusercontent.com/116539782/215680796-52d49de9-7bc0-4cc1-860d-f80dbe871ab3.png)
 
+![test](https://user-images.githubusercontent.com/116539782/215680820-c6e1cd37-97eb-420f-bc5e-7d2263ba430c.png)
 
 ## How To
 open integrated terminal
